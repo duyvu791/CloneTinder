@@ -1,0 +1,28 @@
+{
+  "name": "tinderxn",
+  "version": "1.0.0",
+  "description": "tinder clone neeee",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuhanamm/CloneTinder.git"
+  },
+  "keywords": [
+    "tinder",
+    "handlebars"
+  ],
+  "author": "vuhanam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vuhanamm/CloneTinder/issues"
+  },
+  "homepage": "https://github.com/vuhanamm/CloneTinder#readme"
+}
