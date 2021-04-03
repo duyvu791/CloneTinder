@@ -16,7 +16,7 @@ app.set('view engine',"handlebars")
 app.get('/',function (request,response){
     //var name = 'duyvu'
     //var arr = ['apple','banana','orange'];
-    response.render('index',/*{title: name,date : '2021',arr : arr}*/)
+    response.render('index'/*,{title: name,date : '2021',arr : arr}*/)
 });
 app.use(express.static('assets'));
 
