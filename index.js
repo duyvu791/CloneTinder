@@ -14,9 +14,16 @@ app.set('view engine',"handlebars")
 
 // lắng nghe http get
 app.get('/',function (request,response){
-    //var name = 'duyvu'
-    //var arr = ['apple','banana','orange'];
     response.render('index'/*,{title: name,date : '2021',arr : arr}*/);
+});
+app.get('/register',function (request,response){
+    response.render('register'/*,{title: name,date : '2021',arr : arr}*/);
+});
+app.get('/login',function (request,response){
+    response.render('login'/*,{title: name,date : '2021',arr : arr}*/);
+});
+app.get('/user',function (request,response){
+    response.render('user'/*,{title: name,date : '2021',arr : arr}*/);
 });
 app.use(express.static('assets'));
 

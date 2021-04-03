@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-light navbar-expand-md text-right navigation-clean-search"
+     style="border-bottom: 1px solid lightgrey">
+    <div class="container-fluid" style="margin: 5px 20px"><a class="navbar-brand" href="#" style="font-size: 50px">tinder</a>
+        <div class="collapse navbar-collapse justify-content-end" id="navcol-1">
+            <ul class="nav navbar-nav">
+                <li class="nav-item dropdown"><a class="dropdown-toggle nav-link text-uppercase" data-toggle="dropdown"
+                                                 aria-expanded="false" href="#">English</a>
+                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First
+                        Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a
+                            class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <h2 style="text-align: center;font-weight: bold;font-style: italic;margin-top: 50px">CREATE ACCOUNT</h2>
+    <div>
+        <div class="divInput">
+            <form>
+                <div class="form-group">
+                    <label>First name</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="First name" aria-label="Firstname"
+                               aria-describedby="basic-addon1">
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label>Email address</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Firstname"
+                               aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Profile photo</label>
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+        <div class="divButton">
+            <div class="gioiTinh">
+                <label>Gender</label>
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button">Man</button>
+                    <button class="btn btn-outline-secondary" type="button">Woman</button>
+                </div>
+            </div>
+            <div class="ngaysinh">
+                <label>Birthday</label>
+                <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+            </div>
+            <div class="soThich">
+                <label>Sở thích</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Xem phim
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" >
+                    <label class="form-check-label" for="flexCheckChecked2">
+                        Nghe nhạc
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" >
+                    <label class="form-check-label" for="flexCheckChecked3">
+                        Đá bóng
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4"\>
+                    <label class="form-check-label" for="flexCheckChecked4">
+                        Chơi game
+                    </label>
+                </div>
+            </div>
+            <div class="gioiThieu">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-12" style="display:flex;justify-content: center ; margin-top: 50px">
+            <button class="btn btn-primary btn-lg text-uppercase" style="border-radius: 20px;background-image: linear-gradient(to right,#fd297c,#ff7456);font-size: 14px;padding: 10px 60px"
+                    type="submit">CREATE</button>
+        </div>
+        <p  style="margin: 40px;text-align: center"><a href="login" style="text-decoration: none;color: black">ALREADY HAVE AN ACCOUNT ? LOG IN</a></p>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+</html>
