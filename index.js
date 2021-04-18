@@ -5,8 +5,8 @@ var upload = multer({ dest: 'uploads/' });
 const mongoose = require('mongoose');
 var app = express();
 var expressHandlebar = require('express-handlebars');
-const handlebars = require("handlebars");
 mongoose.set("useFindAndModify",false);
+const port = 7921;
 
 //thiết lập thư viện handlebar
 app.engine('handlebars',expressHandlebar({
@@ -121,4 +121,4 @@ app.get('/delete/:id', async(req,res) =>{
 
 
 
-app.listen(process.env.PORT || '9998');
+app.listen(process.env.PORT || port);
