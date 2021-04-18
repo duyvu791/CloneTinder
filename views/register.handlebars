@@ -31,16 +31,33 @@
     <h2 style="text-align: center;font-weight: bold;font-style: italic;margin-top: 50px">CREATE ACCOUNT</h2>
     <div>
         <div class="divInput">
-            <form>
+            <form action="/register" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label>First name</label>
+                    <label>Name</label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">@</span>
                         </div>
-                        <input type="text" class="form-control" placeholder="First name" aria-label="Firstname"
+                        <input type="text" class="form-control" placeholder="Name" name="username" aria-label="Firstname"
                                aria-describedby="basic-addon1">
                     </div>
+                    <label>Password</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Name" name="password" aria-label="Firstname"
+                               aria-describedby="basic-addon1">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Phone Number" name="phonenumber" aria-label="Firstname"
+                                   aria-describedby="basic-addon1">
+                        </div>
 
                 </div>
                 <div class="form-group">
@@ -49,70 +66,35 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">@</span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Firstname"
+                        <input type="text" class="form-control" placeholder="Email" name="email" aria-label="Firstname"
                                aria-describedby="basic-addon1">
                     </div>
                 </div>
                 <div class="form-group">
                     <label>Profile photo</label>
                     <div class="input-group mb-3">
-                        <input type="file" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+                        <input type="file" class="form-control" placeholder="Email" name="avatar" aria-describedby="basic-addon1">
                     </div>
                 </div>
 
-
+                <div class="ngaysinh">
+                    <label>Birthday</label>
+                    <input class="form-control" type="date" name="birthday" value="2011-08-19" id="example-date-input">
+                </div>
+                <div class="gioiThieu">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Description</label>
+                        <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="col-12" style="display:flex;justify-content: center ; margin-top: 50px">
+                    <button class="btn btn-primary btn-lg text-uppercase" style="border-radius: 20px;background-image: linear-gradient(to right,#fd297c,#ff7456);font-size: 14px;padding: 10px 60px"
+                            type="submit">CREATE</button>
+                </div>
             </form>
         </div>
-        <div class="divButton">
-            <div class="gioiTinh">
-                <label>Gender</label>
-                <div class="input-group-prepend">
-                    <button class="btn btn-outline-secondary" type="button">Man</button>
-                    <button class="btn btn-outline-secondary" type="button">Woman</button>
-                </div>
             </div>
-            <div class="ngaysinh">
-                <label>Birthday</label>
-                <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
-            </div>
-            <div class="soThich">
-                <label>Sở thích</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Xem phim
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" >
-                    <label class="form-check-label" for="flexCheckChecked2">
-                        Nghe nhạc
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" >
-                    <label class="form-check-label" for="flexCheckChecked3">
-                        Đá bóng
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4"\>
-                    <label class="form-check-label" for="flexCheckChecked4">
-                        Chơi game
-                    </label>
-                </div>
-            </div>
-            <div class="gioiThieu">
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Description</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-            </div>
-        </div>
-        <div class="col-12" style="display:flex;justify-content: center ; margin-top: 50px">
-            <button class="btn btn-primary btn-lg text-uppercase" style="border-radius: 20px;background-image: linear-gradient(to right,#fd297c,#ff7456);font-size: 14px;padding: 10px 60px"
-                    type="submit">CREATE</button>
-        </div>
+
         <p  style="margin: 40px;text-align: center"><a href="login" style="text-decoration: none;color: black">ALREADY HAVE AN ACCOUNT ? LOG IN</a></p>
     </div>
 </div>

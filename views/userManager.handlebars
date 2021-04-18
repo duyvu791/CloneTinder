@@ -1,0 +1,20 @@
+    {{#each user}}
+        <div>
+        <h4>Username : {{this.username}}</h4>
+        <h4>Email : {{this.email}}</h4>
+        <h4>Password : {{this.password}}</h4>
+        <h4>Birthday : {{this.birthday}}</h4>
+        <h4>Description : {{this.description}}</h4>
+        <button style="border: 1px blue solid;border-radius: 10px;background-color: greenyellow;padding: 5px 15px"><a href="update/{{this._id}}"/>Update</button>
+            <button style="border: 1px blue solid;border-radius: 10px;background-color: orangered;padding: 5px 15px"><a href="/delete/{{this._id}}">Delete</a></button>
+            <hr>
+        </div>
+    {{/each}}
+<!--
+ username : String,
+    email: String,
+    password : String,
+    birthday: String,
+    phonenumber: String,
+    description :  String,
+--/>
